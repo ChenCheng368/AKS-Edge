@@ -4,8 +4,8 @@
     "AksEdgeProduct": "AKS Edge Essentials - K3s",
     "AksEdgeProductUrl": "",
     "InstallOptions": {
-        "InstallPath": "",
-        "VhdxPath": ""
+        "InstallPath": "D:\AksEdgeScript",
+        "VhdxPath": "D:\vhdx"
     },
     "VSwitch": {
         "Name": "",
