@@ -101,6 +101,7 @@ $aksedgeConfig = @"
         "AcceptEula": true,
         "AcceptOptionalTelemetry": true
     },
+    "InstallOptions": { "VhdxPath": "F:\vhdx"},
     "Machines": [
         {
             "LinuxNode": {
