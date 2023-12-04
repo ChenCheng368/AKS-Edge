@@ -54,7 +54,7 @@ if ( $null -eq $azureLogin){
     exit -1
 }
 
-$installDir = "F:\AksEdgeScript"
+$installDir = "D:\AksEdgeScript"
 $productName = "AKS Edge Essentials - K3s"
 $networkplugin = "flannel"
 if ($UseK8s) {
