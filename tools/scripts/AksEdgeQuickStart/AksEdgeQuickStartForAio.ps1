@@ -54,7 +54,7 @@ if ( $null -eq $azureLogin){
     exit -1
 }
 
-$installDir = "D:\AksEdgeScript"
+$installDir = $((Get-Location).Path)
 $productName = "AKS Edge Essentials - K3s"
 $networkplugin = "flannel"
 if ($UseK8s) {
@@ -101,13 +101,12 @@ $aksedgeConfig = @"
         "AcceptEula": true,
         "AcceptOptionalTelemetry": true
     },
-    "InstallOptions": { "VhdxPath": "F:\vhdx"},
     "Machines": [
         {
             "LinuxNode": {
-                "CpuCount": 32,
-                "MemoryInMB": 131072,
-                "DataSizeInGB": 200,
+                "CpuCount": 8,
+                "MemoryInMB": 8192,
+                "DataSizeInGB": 30,
                 "LogSizeInGB": 4
             }
         }
